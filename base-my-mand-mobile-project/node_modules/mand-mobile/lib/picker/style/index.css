@@ -1,0 +1,9 @@
+.md-picker {
+  width: 100%;
+}
+.md-picker.with-popup .md-popup {
+  z-index: 1100 !important;
+}
+.md-picker .md-popup-box {
+  background-color: #fff;
+}

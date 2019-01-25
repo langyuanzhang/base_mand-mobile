@@ -1,0 +1,86 @@
+.md-tabs {
+  z-index: 101;
+  font-size: 3.73333vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.md-tabs .md-tab-bar {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  position: relative;
+}
+.md-tabs .md-tab-bar::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  background-color: #ebebeb;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: scaleY(0.5) translateY(100%);
+  transform: scaleY(0.5) translateY(100%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .md-tabs .md-tab-bar::before {
+    -webkit-transform: scaleY(0.33) translateY(100%);
+    transform: scaleY(0.33) translateY(100%);
+  }
+}
+.md-tabs .md-tab-bar.on-bottom {
+  border-bottom: none;
+  position: relative;
+}
+.md-tabs .md-tab-bar.on-bottom::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  background-color: #ebebeb;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: scaleY(0.5) translateY(-100%);
+  transform: scaleY(0.5) translateY(-100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .md-tabs .md-tab-bar.on-bottom::after {
+    -webkit-transform: scaleY(0.33) translateY(-100%);
+    transform: scaleY(0.33) translateY(-100%);
+  }
+}
+.md-tabs .md-tab-content-wrapper {
+  position: relative;
+  min-height: 13.33333vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.md-tabs .md-tab-content-wrapper .md-tab-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow-y: scroll;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}

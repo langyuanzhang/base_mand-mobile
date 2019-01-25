@@ -1,0 +1,7 @@
+.md-date-picker .column-item {
+  font-size: 3.73333vw !important;
+  overflow: visible !important;
+}
+.md-date-picker.datetime .column-item {
+  font-size: 3.2vw !important;
+}

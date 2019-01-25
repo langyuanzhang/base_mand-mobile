@@ -1,0 +1,47 @@
+.md-tag {
+  color: #333;
+  font-size: 3.73333vw;
+  text-align: center;
+  display: inline-block;
+}
+.md-tag .default {
+  background: rgba(0,0,0,0);
+  color: #fc9153;
+  border-color: #fc9153;
+}
+.md-tag .shape-square {
+  border-radius: 0;
+}
+.md-tag .shape-fillet {
+  border-radius: 0.53333vw;
+}
+.md-tag .shape-circle,
+.md-tag .size-large {
+  font-size: 3.73333vw;
+  padding: 0.66667vw;
+}
+.md-tag .size-small {
+  font-size: 2.66667vw;
+  padding: 0.66667vw;
+}
+.md-tag .size-tiny {
+  font-size: 1.6vw;
+  padding: 0.66667vw;
+}
+.md-tag .type-fill {
+  color: #fff;
+  background: #fc9153;
+}
+.md-tag .type-ghost {
+  border: 1px solid #fc9153;
+  background: rgba(0,0,0,0);
+}
+.md-tag .font-weight-normal {
+  font-weight: normal;
+}
+.md-tag .font-weight-bold {
+  font-weight: bold;
+}
+.md-tag .font-weight-bolder {
+  font-weight: bolder;
+}

@@ -1,0 +1,6 @@
+.md-swiper-item {
+  position: relative;
+  width: 100%;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}

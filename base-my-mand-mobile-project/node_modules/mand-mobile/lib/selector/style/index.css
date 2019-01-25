@@ -1,0 +1,27 @@
+.md-selector .md-popup {
+  z-index: 1102 !important;
+}
+.md-selector .md-popup .md-popup-box {
+  background-color: #fff;
+}
+.md-selector .md-popup .md-selector-container {
+  background: #fff;
+  overflow: hidden;
+}
+.md-selector .md-field-item.selected {
+  color: #fc9153 !important;
+}
+.md-selector.is-check .md-field-item.selected .md-icon {
+  fill: #fc9153 !important;
+}
+.md-selector.is-check .md-field-item.selected .md-icon .md-field-item-content.left {
+  padding-right: 32px;
+}
+.md-selector.is-normal .md-field-item-content.left {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.md-selector.is-normal .md-field-item .md-icon {
+  display: none;
+}

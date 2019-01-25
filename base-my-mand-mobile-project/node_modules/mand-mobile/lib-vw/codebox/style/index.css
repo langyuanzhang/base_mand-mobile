@@ -1,0 +1,133 @@
+.md-codebox-wrapper .md-codebox-input {
+  position: absolute;
+  left: -1333.2vw;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.md-codebox {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.md-codebox .md-codebox-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 10.66667vw;
+  color: #333;
+  font-size: 3.73333vw;
+  margin-left: 1.06667vw;
+  margin-right: 1.06667vw;
+  position: relative;
+}
+.md-codebox .md-codebox-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border: solid 2px #d9d9d9;
+  box-sizing: border-box;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  z-index: 2;
+}
+.md-codebox .md-codebox-box::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.md-codebox .md-codebox-box::after {
+  border-radius: 0.53333vw;
+}
+.md-codebox .md-codebox-box.is-active::after {
+  border-color: #fc9153;
+}
+.md-codebox .md-codebox-blink {
+  display: block;
+  height: 5.33333vw;
+  width: 2px;
+  background-color: #fc9153;
+  -webkit-animation: md-codebox-flash steps(2) 1s infinite;
+  animation: md-codebox-flash steps(2) 1s infinite;
+}
+.md-codebox .md-codebox-dot {
+  display: block;
+  height: 1.33333vw;
+  width: 1.33333vw;
+  line-height: 1.33333vw;
+  border-radius: 0.66667vw;
+  background-color: #000;
+}
+.md-codebox .md-codebox-holder {
+  pointer-events: none;
+  height: 9.06667vw;
+  padding: 2.13333vw 4.26667vw;
+  width: 100%;
+  text-align: center;
+  font-size: 3.73333vw;
+  outline: none;
+  color: #333;
+  letter-spacing: 0.1em;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: #d9d9d9;
+  background: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+.md-codebox .md-codebox-holder[disabled],
+.md-codebox .md-codebox-holder[readonly] {
+  color: #333;
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+.md-codebox .md-codebox-holder.is-active {
+  border-color: #fc9153;
+}
+@-webkit-keyframes md-codebox-flash {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+@keyframes md-codebox-flash {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+  }
+}

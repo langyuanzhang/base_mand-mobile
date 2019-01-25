@@ -1,0 +1,47 @@
+.md-tag {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+  display: inline-block;
+}
+.md-tag .default {
+  background: rgba(0,0,0,0);
+  color: #fc9153;
+  border-color: #fc9153;
+}
+.md-tag .shape-square {
+  border-radius: 0;
+}
+.md-tag .shape-fillet {
+  border-radius: 4px;
+}
+.md-tag .shape-circle,
+.md-tag .size-large {
+  font-size: 28px;
+  padding: 5px;
+}
+.md-tag .size-small {
+  font-size: 20px;
+  padding: 5px;
+}
+.md-tag .size-tiny {
+  font-size: 12px;
+  padding: 5px;
+}
+.md-tag .type-fill {
+  color: #fff;
+  background: #fc9153;
+}
+.md-tag .type-ghost {
+  border: 1px solid #fc9153;
+  background: rgba(0,0,0,0);
+}
+.md-tag .font-weight-normal {
+  font-weight: normal;
+}
+.md-tag .font-weight-bold {
+  font-weight: bold;
+}
+.md-tag .font-weight-bolder {
+  font-weight: bolder;
+}

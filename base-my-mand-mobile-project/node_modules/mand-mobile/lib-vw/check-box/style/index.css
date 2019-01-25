@@ -1,0 +1,59 @@
+.md-check-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -1.06667vw;
+  margin-right: -1.06667vw;
+}
+.md-check-box.is-2col .md-check-box-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+          flex: 0 0 50%;
+  width: 50%;
+}
+.md-check-box.is-3col .md-check-box-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.33333333%;
+          flex: 0 0 33.33333333%;
+  width: 33.33333333%;
+}
+.md-check-box.is-4col .md-check-box-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+          flex: 0 0 25%;
+  width: 25%;
+}
+.md-check-box.is-5col .md-check-box-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+          flex: 0 0 20%;
+  width: 20%;
+}
+.md-check-box .md-check-box-col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0%;
+          flex: 1 1 0%;
+  padding: 1.06667vw;
+  box-sizing: border-box;
+}
+.md-check-box .md-check-box-item {
+  text-align: center;
+  padding: 1.6vw;
+  color: #333;
+  font-size: 4.26667vw;
+  border: 1px solid #ebebeb;
+  border-radius: 0.4vw;
+  box-sizing: border-box;
+}
+.md-check-box .md-check-box-item.is-selected {
+  color: #3ca0e6;
+  border-color: #3ca0e6;
+  background-color: rgba(60,160,230,0.05);
+}
+.md-check-box .md-check-box-item.is-disabled {
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}

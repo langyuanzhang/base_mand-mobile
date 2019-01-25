@@ -1,0 +1,49 @@
+.md-switch {
+  box-sizing: border-box;
+  position: relative;
+  width: 10.66667vw;
+  height: 6.4vw;
+  border-radius: 6.4vw;
+  background-color: #ccc;
+}
+.md-switch.disabled {
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+.md-switch::before,
+.md-switch::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.md-switch::before {
+  top: 0;
+  left: 0;
+  width: 10.66667vw;
+  height: 6.4vw;
+  border-radius: 3.2vw;
+  background-color: #ccc;
+}
+.md-switch::after {
+  top: 0.53333vw;
+  left: 0.53333vw;
+  width: 5.33333vw;
+  height: 5.33333vw;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.md-switch.active {
+  background-color: #fc9153;
+}
+.md-switch.active::before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.md-switch.active::after {
+  -webkit-transform: translateX(4.26667vw);
+  transform: translateX(4.26667vw);
+}

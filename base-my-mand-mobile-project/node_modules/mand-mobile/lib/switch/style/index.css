@@ -1,0 +1,49 @@
+.md-switch {
+  box-sizing: border-box;
+  position: relative;
+  width: 80px;
+  height: 48px;
+  border-radius: 48px;
+  background-color: #ccc;
+}
+.md-switch.disabled {
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+.md-switch::before,
+.md-switch::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.md-switch::before {
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #ccc;
+}
+.md-switch::after {
+  top: 4px;
+  left: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.md-switch.active {
+  background-color: #fc9153;
+}
+.md-switch.active::before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.md-switch.active::after {
+  -webkit-transform: translateX(32px);
+  transform: translateX(32px);
+}

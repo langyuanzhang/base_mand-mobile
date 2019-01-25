@@ -1,0 +1,115 @@
+.md-action-bar {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 13.33333vw;
+  padding-bottom: constant(safe-area-inset-bottom);
+  background: #fff;
+}
+.md-action-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.md-action-bar .md-action-bar-text {
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  width: 65%;
+  padding-left: 4.26667vw;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  overflow: hidden;
+  color: #fc9153;
+  font-size: 4.8vw;
+  box-sizing: border-box;
+}
+.md-action-bar .md-action-bar-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+.md-action-bar .md-action-bar-button .button-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  float: right;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  color: #333;
+  font-size: 4.26667vw;
+  font-weight: 500;
+  background: #fff;
+  position: relative;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.md-action-bar .md-action-bar-button .button-item::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  background-color: #d9d9d9;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: scaleX(0.5) translateX(100%);
+  transform: scaleX(0.5) translateX(100%);
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .md-action-bar .md-action-bar-button .button-item::before {
+    -webkit-transform: scaleX(0.33) translateX(100%);
+    transform: scaleX(0.33) translateX(100%);
+  }
+}
+.md-action-bar .md-action-bar-button .button-item.disabled {
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+.md-action-bar .md-action-bar-button .button-item:nth-last-of-type(2)::before {
+  display: none;
+}
+.md-action-bar .md-action-bar-button .button-item:last-of-type {
+  background: #fc9153;
+  color: #fff;
+}
+.md-action-bar .md-action-bar-button .button-item:last-of-type.disabled {
+  background: #ccc;
+  color: #fff;
+}
+.md-action-bar .md-action-bar-button .button-item:last-of-type::before {
+  display: none;
+}
+.md-action-bar .md-action-bar-button .button-item::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.08);
+}
+.md-action-bar .md-action-bar-button .button-item:active::after {
+  display: block;
+}
+.md-action-bar.with-text.multi-action .md-action-bar-text {
+  width: 40%;
+}

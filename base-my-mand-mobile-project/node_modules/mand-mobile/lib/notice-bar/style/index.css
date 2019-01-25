@@ -1,0 +1,22 @@
+.md-notice-bar {
+  z-index: 1300;
+  font-size: 24px;
+  height: 75px;
+  line-height: 75px;
+  background-color: #4a4c5b;
+  color: #fff;
+  position: relative;
+  padding-left: 80px;
+}
+.md-notice-bar .md-notice-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.md-notice-bar .md-notice-icon.md-notice-icon-left {
+  left: 32px;
+}
+.md-notice-bar .md-notice-icon.md-notice-icon-right {
+  right: 32px;
+}

@@ -1,0 +1,31 @@
+.md-captcha .md-dialog {
+  z-index: 1400;
+}
+.md-captcha .md-dialog .md-dialog-content {
+  margin-bottom: 428px;
+}
+.md-captcha .md-captcha-content {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.md-captcha .md-captcha-content .md-captcha-title {
+  color: #333;
+  font-size: 32px;
+  margin: 0;
+}
+.md-captcha .md-captcha-content .md-captcha-error {
+  color: #ff525d;
+  font-size: 24px;
+  line-height: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+.md-captcha .md-captcha-content .md-captcha-countbtn {
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 32px auto;
+  width: auto;
+  min-width: 130px;
+}

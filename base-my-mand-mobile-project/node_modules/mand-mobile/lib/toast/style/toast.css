@@ -1,0 +1,41 @@
+.md-toast {
+  position: relative;
+  z-index: 1501;
+}
+.md-toast.has-icon .md-toast-content {
+  padding-left: 88px;
+}
+.md-toast .md-toast-content {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding: 26px;
+  border-radius: 4px;
+  font-size: 28px;
+  color: #ccc;
+  background-color: rgba(0,0,0,0.8);
+  box-sizing: content-box;
+}
+.md-toast .md-icon {
+  position: absolute;
+  top: 50%;
+  left: 26px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.md-toast .md-popup .md-popup-box {
+  width: 468px;
+  text-align: center;
+  overflow: visible;
+}
+.md-toast .md-popup .md-popup-mask {
+  background: transparent;
+}
+.md-toast.bottom .md-popup.center .md-popup-box {
+  top: auto;
+  bottom: 50px;
+}
+.md-toast.top .md-popup.center .md-popup-box {
+  top: 50px;
+  bottom: auto;
+}

@@ -1,0 +1,30 @@
+.md-landscape .content {
+  position: relative;
+  min-width: 540px;
+  min-height: 500px;
+  font-size: 28px;
+  text-align: center;
+  border-radius: 4px;
+}
+.md-landscape .content >img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.md-landscape .content.scroll {
+  max-height: 700px;
+  overflow-y: scroll;
+}
+.md-landscape .close {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  width: 40px;
+  margin: 0 auto;
+  color: #fff;
+}
+.md-landscape .close.dark {
+  color: #333;
+}

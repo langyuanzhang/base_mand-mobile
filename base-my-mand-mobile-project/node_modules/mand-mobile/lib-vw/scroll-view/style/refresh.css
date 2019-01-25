@@ -1,0 +1,24 @@
+.md-scroll-view-refresh {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 6.66667vw 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  overflow: hidden;
+}
+.md-scroll-view-refresh .md-activity-indicator-rolling .md-activity-indicator-svg {
+  width: 4.26667vw !important;
+  height: 4.26667vw !important;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+.md-scroll-view-refresh .refresh-tip {
+  margin-left: 2vw;
+  font-size: 3.2vw;
+  color: #999;
+}

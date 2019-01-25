@@ -1,0 +1,12 @@
+.md-activity-indicator-spinning:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.md-activity-indicator-spinning .md-icon {
+  float: left;
+}
+.md-activity-indicator-spinning.dark .md-icon {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}

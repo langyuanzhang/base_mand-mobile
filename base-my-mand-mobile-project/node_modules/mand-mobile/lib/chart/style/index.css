@@ -1,0 +1,20 @@
+.md-chart line {
+  stroke: #ccc;
+  stroke-width: 0.5;
+  stroke-linecap: square;
+}
+.md-chart path {
+  stroke: #fc9153;
+  stroke-width: 1;
+  stroke-linecap: butt;
+}
+.md-chart .md-chart-axis-y text {
+  fill: #666;
+  font-size: 20px;
+  text-anchor: end;
+}
+.md-chart .md-chart-axis-x text {
+  fill: #666;
+  font-size: 22px;
+  text-anchor: middle;
+}

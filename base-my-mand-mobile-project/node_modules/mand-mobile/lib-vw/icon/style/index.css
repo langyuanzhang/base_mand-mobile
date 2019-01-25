@@ -1,0 +1,24 @@
+.md-icon {
+  background-size: contain;
+  fill: currentColor;
+}
+.md-icon.xss {
+  width: icon-size-xxs;
+  height: icon-size-xxs;
+}
+.md-icon.xs {
+  width: 2.66667vw;
+  height: 2.66667vw;
+}
+.md-icon.sm {
+  width: 3.2vw;
+  height: 3.2vw;
+}
+.md-icon.md {
+  width: 4.26667vw;
+  height: 4.26667vw;
+}
+.md-icon.lg {
+  width: 5.6vw;
+  height: 5.6vw;
+}

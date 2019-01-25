@@ -1,0 +1,12 @@
+.md-check-list .md-check-list-item.is-selected {
+  color: #3ca0e6;
+}
+.md-check-list .md-check-list-item.is-selected .md-icon {
+  fill: #3ca0e6;
+}
+.md-check-list .md-check-list-item .md-field-item-label {
+  display: none;
+}
+.md-check-list .md-check-list-item .md-field-item-content.left {
+  margin-left: 0;
+}

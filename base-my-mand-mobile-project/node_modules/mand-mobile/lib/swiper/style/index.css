@@ -1,0 +1,91 @@
+.md-swiper-box {
+  overflow: hidden;
+}
+.md-swiper,
+.md-swiper-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+}
+.md-swiper.disabled,
+.md-swiper-box.disabled {
+  visibility: hidden;
+}
+.md-swiper.md-swiper-fade .md-swiper-item,
+.md-swiper-box.md-swiper-fade .md-swiper-item {
+  position: absolute;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  top: 0;
+  left: 0;
+}
+.md-swiper.md-swiper-vertical .md-swiper-container,
+.md-swiper-box.md-swiper-vertical .md-swiper-container {
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.md-swiper.md-swiper-vertical .md-swiper-indicators,
+.md-swiper-box.md-swiper-vertical .md-swiper-indicators {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 6px;
+  right: 10px;
+  left: auto;
+  bottom: auto;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.md-swiper.md-swiper-vertical .md-swiper-indicators.disabled,
+.md-swiper-box.md-swiper-vertical .md-swiper-indicators.disabled {
+  visibility: hidden;
+}
+.md-swiper.md-swiper-vertical .md-swiper-indicators .md-swiper-indicator,
+.md-swiper-box.md-swiper-vertical .md-swiper-indicators .md-swiper-indicator {
+  margin: 5px 0;
+}
+.md-swiper .md-swiper-container,
+.md-swiper-box .md-swiper-container {
+  height: 100%;
+  width: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: content-box;
+}
+.md-swiper .md-swiper-indicators,
+.md-swiper-box .md-swiper-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.md-swiper .md-swiper-indicators .md-swiper-indicator,
+.md-swiper-box .md-swiper-indicators .md-swiper-indicator {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #999;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  margin: 0 5px;
+}
+.md-swiper .md-swiper-indicators .md-swiper-indicator.md-swiper-indicator-active,
+.md-swiper-box .md-swiper-indicators .md-swiper-indicator.md-swiper-indicator-active {
+  background: #333;
+}

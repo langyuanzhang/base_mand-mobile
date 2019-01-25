@@ -1,0 +1,11 @@
+.md-activity-indicator-rolling:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.md-activity-indicator-rolling .rolling {
+  float: left;
+}
+.md-activity-indicator-rolling .rolling circle.stroke {
+  will-change: auto;
+}

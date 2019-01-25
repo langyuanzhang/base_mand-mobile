@@ -1,0 +1,94 @@
+.md-steps {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 2.66667vw 13.33333vw 9.33333vw;
+  font-size: 3.73333vw;
+}
+.md-steps .icon-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  min-width: 4.26667vw;
+  min-height: 4.26667vw;
+}
+.md-steps .icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  color: #fc9153;
+}
+.md-steps .icon >div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.md-steps .icon .md-stain {
+  width: 1.6vw;
+  height: 1.6vw;
+  background: #ccc;
+  border-radius: 1.6vw;
+}
+.md-steps .icon.reached .md-icon {
+  width: 4.26667vw;
+  height: 4.26667vw;
+}
+.md-steps .text-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+}
+.md-steps .text-wrapper .text {
+  position: absolute;
+  top: 4vw;
+  color: #333;
+  font-size: 3.2vw;
+  white-space: nowrap;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.md-steps .bar {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  margin: 0 2.66667vw;
+  border-top: dotted 2px #ccc;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.md-steps .bar.reached {
+  border-top: solid 2px #ccc;
+}

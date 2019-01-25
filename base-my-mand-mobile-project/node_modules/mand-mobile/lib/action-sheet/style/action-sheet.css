@@ -1,0 +1,69 @@
+.md-action-sheet {
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+.md-action-sheet .md-action-sheet-content {
+  position: relative;
+  width: 100%;
+  font-size: 30px;
+  background: #fff;
+  text-align: center;
+  overflow: auto;
+}
+.md-action-sheet .md-action-sheet-content header {
+  height: 120px;
+  line-height: 120px;
+  padding: 0 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.md-action-sheet .md-action-sheet-content >ul li {
+  height: 120px;
+  line-height: 120px;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+.md-action-sheet .md-action-sheet-content >ul li::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  background-color: #d9d9d9;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: scaleY(0.5) translateY(-100%);
+  transform: scaleY(0.5) translateY(-100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .md-action-sheet .md-action-sheet-content >ul li::after {
+    -webkit-transform: scaleY(0.33) translateY(-100%);
+    transform: scaleY(0.33) translateY(-100%);
+  }
+}
+.md-action-sheet .md-action-sheet-content >ul li.active {
+  color: #fc9153;
+}
+.md-action-sheet .md-action-sheet-content >ul li.disabled {
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+}
+.md-action-sheet .md-action-sheet-content >ul li.cancel-btn {
+  height: 132px;
+  line-height: 120px;
+  color: #333;
+}
+.md-action-sheet .md-action-sheet-content >ul li.cancel-btn::before {
+  display: block;
+  content: '';
+  height: 12px;
+  background: #f3f4f5;
+}
+.md-action-sheet .md-popup-box {
+  background-color: #fff;
+}

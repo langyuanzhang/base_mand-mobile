@@ -1,0 +1,8 @@
+.md-activity-indicator-carousel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.md-activity-indicator-carousel .carouseling {
+  float: left;
+}

@@ -1,0 +1,7 @@
+.md-number-keyboard .md-popup,
+.md-number-keyboard .md-popup-box {
+  z-index: 1403 !important;
+}
+.md-number-keyboard .md-popup-box {
+  background-color: #fff;
+}

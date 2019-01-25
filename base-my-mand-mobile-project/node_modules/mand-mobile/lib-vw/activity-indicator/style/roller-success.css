@@ -1,0 +1,70 @@
+.md-activity-indicator-rolling-success {
+  position: relative;
+}
+.md-activity-indicator-rolling-success .right {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.md-activity-indicator-rolling-success .right line {
+  will-change: auto;
+}
+.md-activity-indicator-rolling-success .right line:first-child {
+  -webkit-animation: md-activity-indicator-rolling-line0 0.2s cubic-bezier(1, 0.5, 0.8, 1) forwards;
+  animation: md-activity-indicator-rolling-line0 0.2s cubic-bezier(1, 0.5, 0.8, 1) forwards;
+}
+.md-activity-indicator-rolling-success .right line:last-child {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-animation: md-activity-indicator-rolling-line1 0.2s cubic-bezier(1, 0.5, 0.8, 1) 0.2s forwards;
+  animation: md-activity-indicator-rolling-line1 0.2s cubic-bezier(1, 0.5, 0.8, 1) 0.2s forwards;
+}
+@-webkit-keyframes md-activity-indicator-rolling-line0 {
+  from {
+    stroke-dashoffset: 20;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes md-activity-indicator-rolling-line0 {
+  from {
+    stroke-dashoffset: 20;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes md-activity-indicator-rolling-line1 {
+  from {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+    stroke-dashoffset: 35;
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes md-activity-indicator-rolling-line1 {
+  from {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+    stroke-dashoffset: 35;
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    -webkit-filter: none;
+            filter: none;
+    stroke-dashoffset: 0;
+  }
+}

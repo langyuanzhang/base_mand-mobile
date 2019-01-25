@@ -1,0 +1,33 @@
+.md-tab-picker .md-tab-picker-content[data-v-5d4e08a1] {
+  background: #fff;
+}
+.md-tab-picker .md-tab-picker-content {
+  position: relative;
+}
+.md-tab-picker .md-tabs .md-tab-content-wrapper {
+  height: 53.33333vw;
+}
+.md-tab-picker .md-tabs .md-tab-content-wrapper .md-tab-content {
+  height: 53.33333vw;
+  overflow: scroll;
+}
+.md-tab-picker .slot-wrapper {
+  background: rgba(255,255,255,0.7);
+  position: absolute;
+  top: 10.66667vw;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+.md-tab-picker .slot-wrapper .slot-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 3.73333vw;
+  color: #666;
+}
+.md-tab-picker .md-popup-box {
+  background-color: #fff;
+}
